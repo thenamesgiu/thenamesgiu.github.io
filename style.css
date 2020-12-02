@@ -1,0 +1,253 @@
+/*boot css*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html, body{
+	overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/*Especificações para body*/
+body{
+	background-color: #111111;
+	
+}
+
+/*Especificações para botões de atalho em viewport maior*/
+.btn {
+  background-color: #A7D129;
+  border: none;
+  color: #2A3A2A;
+  padding: 20px 44px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Helvetica;
+  margin: 4px;
+  cursor: pointer;
+  border-radius: 16px;
+   opacity: 1;
+  transition: 0.3s;
+  text-shadow: 2px 2px 4px rgba(0,0,0,.5);
+  box-shadow: 0 10px 20px rgba(0,0,0,.5);
+  text-transform: uppercase;
+}
+
+
+/*Especificações para botões de música em viewport maior*/
+.soundb {
+  background-color: #2DE783;
+  border: none;
+  color: #2A3A2A;
+  padding: 20px 44px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Helvetica;
+  margin: 4px;
+  cursor: pointer;
+  border-radius: 16px;
+   opacity: 1;
+  transition: 0.3s;
+  text-shadow: 2px 2px 4px rgba(0,0,0,.5);
+  box-shadow: 0 10px 20px rgba(0,0,0,.5);
+  text-transform: uppercase;
+}
+
+/*Hover de botões de música para viewport maior (notebook, laptops e pc)*/
+.soundb:hover {
+	opacity: 0.6;
+	background-color:#16AD5C;
+}
+
+/*Especificações de link para os botões*/
+a{
+	text-decoration: none;
+	color:black;
+	text-align: center;
+	cursor:pointer;
+}
+
+/*Hover de botões de atalho para viewport maior (notebook, laptops e pc)*/
+.btn:hover {
+	opacity: 0.6;
+	background-color:#616F39;
+}
+
+
+
+/*uso de media query para deixar responsivo*/
+@media screen and (max-width: 800px) and (min-width: 600px){
+	body{
+		width: auto;	
+	}
+
+	
+
+  	#buttn{
+  		margin: 0;
+  		display: none;
+  	}
+
+}
+
+
+@media screen and (max-width: 600px){
+	body{
+		width: auto;
+	}
+
+	
+	
+}
+
+
+@media screen and(max-width: 800px){
+	body{
+		width: auto;
+	}
+	
+	
+  	#buttn{
+  		display: none;
+  	}
+
+	
+}
+
+@media screen and(max-width: 768px){
+	body{
+		width: auto;
+	}
+	
+	
+  	#buttn{
+  		display: none;
+  	}
+
+	
+}
+
+
+@media screen and (max-width: 640px) and (orientation: landscape) {
+	body{
+		width: auto;
+	}
+
+	#divid{
+		width: auto;
+		height: auto;
+	}
+  	#buttn{
+  		display: none;
+  	}
+
+	
+}
+
+.flip-card {
+  	background-color: transparent;
+  	width: 400px;
+  	height: 400px;
+  	perspective: 1000px;
+
+}
+.flip-card-inner {
+  	position: relative;
+  	width: 100%;
+  	height: 100%;
+  	text-align: center;
+  	transition: transform 0.6s;
+  	transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+  	transform: rotateX(180deg);
+}
+.flip-card-front, .flip-card-back {
+  	position: absolute;
+  	width: 100%;
+  	height: 100%;
+  	-webkit-backface-visibility: hidden;
+  	backface-visibility: hidden;
+	box-shadow: 0 10px 20px rgba(0,0,0,.5);
+}
+.flip-card-front {
+	background-color: #444;
+}
+.flip-card-back {
+	background-image: linear-gradient(45deg, #384E3B, #407647, #3E9049); 
+  	color: #EEFFF1;
+  	font-family: Helvetica;
+  	transform: rotateX(180deg);
+}
+.flip-card-back{
+	padding: 15px;
+}
+.flip-card-back h1{
+	padding: 15px 0;
+}
+.flip-card-back p{
+	text-align: center;
+}
+.flip-card-back a{
+	position: relative;
+	top: 40px;
+}
+
+#divid{
+position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+
+}
+
+
+audio
+{
+
+	position: absolute;
+	left: 50%;
+	top: 15%;
+	transform: translate(-50%,-50%);
+
+
+
+}
+
+a{
+	color: #EEFFF1;
+	font-family: Helvetica;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 30px;
+	font-weight: 300;
+	height: 40px;
+	padding: 15px;
+	background: none;
+	border: 2px solid #fff;
+	border-radius: 40px;
+	box-shadow: 0 5px 10px rgba(0,0,0,.5);
+}
+
+/*class e id das estrelas*/
+#particle, .particle{
+	height: 100% !important;
+	width: 100%
+}
+footer{
+	background-color: #242825;
+}
+footer p {
+	padding: 20px 0;
+	font-size: 12px;
+	text-align: center;
+	color:#B3FFB8;
+	font-family: Helvetica;
+	text-transform: uppercase;
+	text-shadow: 4px 4px 8px rgba(0,0,0,.5);
+}

@@ -1,0 +1,637 @@
+/*boot css*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html, body{
+	overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/*Especificações para body*/
+body{
+	background-image: linear-gradient(15deg, #735389, #18182E, #0A0A11);
+
+} 
+
+/*Especificações para botões de atalho em viewport maior*/
+.btn {
+  background-color: #B68CCB;
+  border: none;
+  color: #20062D;
+  padding: 20px 44px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Helvetica;
+  margin: 4px;
+  cursor: pointer;
+  border-radius: 16px;
+   opacity: 1;
+  transition: 0.3s;
+  text-shadow: 2px 2px 4px rgba(0,0,0,.5);
+  box-shadow: 0 10px 20px rgba(0,0,0,.5);
+  text-transform: uppercase;
+}
+
+/*Especificações para botões de atalho em viewport maior (botões encontrados em summary ou abaixo de galerias)*/
+#alin{
+	text-align: center;
+	margin-top: 60px;
+}
+
+/*Especificações para botões de música em viewport maior*/
+.soundb {
+  background-color: #DDBAEE;
+  border: none;
+  color: #20062D;
+  padding: 20px 44px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Helvetica;
+  margin: 4px;
+  cursor: pointer;
+  border-radius: 16px;
+   opacity: 1;
+  transition: 0.3s;
+  text-shadow: 2px 2px 4px rgba(0,0,0,.5);
+  box-shadow: 0 10px 20px rgba(0,0,0,.5);
+  text-transform: uppercase;
+}
+
+/*Hover de botões de música para viewport maior (notebook, laptops e pc)*/
+.soundb:hover {
+	opacity: 0.6;
+	background-color:#DC94FF;
+}
+
+/*Especificações de link para os botões*/
+a{
+	text-decoration: none;
+	color:black;
+	text-align: center;
+	cursor:pointer;
+}
+
+/*Hover de botões de atalho para viewport maior (notebook, laptops e pc)*/
+.btn:hover {
+	opacity: 0.6;
+	background-color:#CE6DFF;
+}
+
+/*Classe para a div do header*/
+.header{
+	height: 600px;
+	box-shadow: 0 10px 20px rgba(0,0,0,.5);
+	background-image: linear-gradient(15deg, #0F0F1F, #2E2E55, #6B4677); 
+}
+#particle, .particle{
+  height: 100% !important;
+}
+/*Classe para a div do header*/
+ .title{
+	text-align: center;
+	width: 1000px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+
+/*Especificação para o h2 do cabeçalho*/
+.title h2{
+	font-size: 60px;
+	margin-bottom: 15px;
+	color:#FCECFF;
+	font-family: Helvetica;
+	text-transform: uppercase;
+	text-shadow: 4px 4px 8px rgba(0,0,0,.5);
+}
+
+/*Especificação para h2 utilzado em algumas sections*/
+#gallery{
+	color: #F9D8FF;
+	font-family: Helvetica;
+	font-size: 60px;
+	text-align: center;
+	margin-bottom: 10px;
+	text-shadow: 2px 2px 4px rgba(0,0,0,.5);
+}
+
+/*Especificação para o h2 na section #moments*/
+#anos{
+	color: #1B1919;
+	font-family: Helvetica;
+	font-size: 65px;
+	text-align: center;
+	margin-bottom: 15px;
+	text-shadow: 2px 2px 4px rgba(0,0,0,.5);
+}
+
+/*Classe e especificações utilizadas em todos os details*/
+.hello{
+background-color: #7C5389;
+cursor: pointer;
+ padding: 20px;
+color: #F7E8FF;
+margin: 75px 100px;
+box-shadow: 0 10px 20px rgba(0,0,0,.5);
+font-family: Helvetica; 
+box-shadow: 0 10px 20px rgba(0,0,0,.5);  
+}
+
+.hello:hover {
+	 background-color: #5C286D;
+     color: #F7E8FF;
+}
+
+/*Margem de topo para primeiros parágrafos em summary*/
+#first{
+	margin-top: 20px;
+}
+
+/*Especificação para parágrafo*/
+p{
+	padding: 5px;
+	font-family:Helvetica;
+	font-size: 16px;
+	text-shadow: 2px 2px 4px rgba(0,0,0,.5);
+	text-align: center;
+}
+
+/*Especificação para summary*/
+summary{
+	text-align: center;
+	font-family: Helvetica;
+	font-size: 46px;
+	text-shadow: 2px 2px 4px rgba(0,0,0,.5);
+}
+
+/*Photo grid*/
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/*Criação de quatro colunas que ficarão lado a lado */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+/*Box shadow para todas as imagens*/
+img{
+	box-shadow: 0 10px 20px rgba(0,0,0,.5);
+}
+
+
+
+
+/*Especificação para a section moments*/
+#moments{
+	margin-top: 50px;
+	margin-top: 100px;
+}
+
+			/*Topnav em telas menores (celular e outros)*/
+			.topnav {
+                overflow: hidden;
+                background-color: #1B1919;
+				
+            }
+            .topnav a {
+                float: left;
+                color: #f2f2f2;
+                display: block;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                font-family: Helvetica;
+            }
+            .topnav a:hover {
+                background-color: #D675E9;
+                color: #3C0846;
+            }
+             .topnav a.active {
+                background-color: #FCECFF;
+                color: #3C0846;
+                cursor: default;
+            }
+
+
+/*Slide de fotos*/
+.slideshow-container {
+              max-width: 540px;
+              position: relative;
+              margin: auto;
+            }
+
+            /* Esconde as imagens */
+            .mySlides {
+              display: none;
+            }
+
+            /* Botões anterior e posterior */
+            .prev, .next {
+              cursor: pointer;
+              position: absolute;
+              top: 50%;
+              width: auto;
+              margin-top: -22px;
+              padding: 16px;
+              color: white;
+              font-weight: bold;
+              font-size: 18px;
+              transition: 0.6s ease;
+              border-radius: 0 3px 3px 0;
+              user-select: none;
+            }
+
+            .next {
+              right: 0;
+              border-radius: 3px 0 0 3px;
+            }
+
+            .prev:hover, .next:hover {
+              background-color: #1B1919;
+            }
+
+            .numbertext {
+              color: #f2f2f2;
+              font-size: 12px;
+              padding: 8px 12px;
+              position: absolute;
+              top: 0;
+              font-family: verdana;
+            }
+
+            .dot {
+              cursor: pointer;
+              height: 15px;
+              width: 15px;
+              margin: 0 2px;
+              background-color: #616F39;
+              border-radius: 50%;
+              display: inline-block;
+              transition: background-color 0.6s ease;
+              box-shadow: 0 5px 10px rgba(0,0,0,.5);  
+            }
+
+          .active, .dot:hover {
+              background-color: #A7D129;
+            }
+
+            .fade {
+              -webkit-animation-name: fade;
+              -webkit-animation-duration: 1.5s;
+              animation-name: fade;
+              animation-duration: 1.5s;
+            }
+
+            /*webkit e keyframe*/
+            @-webkit-keyframes fade {
+              from {opacity: .4}
+              to {opacity: 1}
+            }
+
+            @keyframes fade {
+              from {opacity: .4}
+              to {opacity: 1}
+            }
+
+/*webkit para scrollbar*/
+::-webkit-scrollbar {
+  	width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  	box-shadow: inset 0 0 5px #282D29; 
+  	background: #1B1919;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background-image: linear-gradient(360deg, #51315E, #9547B4, #B600FF); 
+  	border-radius: 10px;
+  	border: 2px solid #1e272e;
+}
+
+/*footer da página*/
+footer{
+	background: #1B1919;
+}
+footer p {
+	padding: 20px 0;
+	font-size: 12px;
+	text-align: center;
+	color:#FCECFF;
+	font-family: Helvetica;
+	text-transform: uppercase;
+	text-shadow: 4px 4px 8px rgba(0,0,0,.5);
+}
+.center{
+	max-width: 1280px;
+	padding: 0 2%;
+	margin: 0 auto;
+}
+
+
+
+/*uso de media query para deixar responsivo*/
+@media screen and (max-width: 800px) and (min-width: 600px){
+	body{
+		width: auto;	
+	}
+
+	#gallery{
+	
+		width: 100%;
+	}
+
+	.title h2{
+	
+		width: 100%;
+	}
+
+	.title{
+		max-width: 100%;
+	}
+
+	.hello{
+		width: 100%;
+	}
+
+	section .hello {
+    	padding: 10px;
+   	 	margin: 35px 50px;
+ 	}
+	summary{
+	    font-size: 25px;
+  	}
+
+  	header .title h2 {
+   		font-size: 60px;
+    	margin-bottom: 200px;
+    }
+  
+ 	.header{
+  		height: 400px;
+  	}
+
+  	#buttn{
+  		margin: 0;
+  		display: none;
+  	}
+
+}
+
+
+@media screen and (max-width: 600px){
+	body{
+		width: auto;
+	}
+
+	section .hello {
+    	padding: 10px;
+   		margin: 35px 50px;
+  	}
+
+  	summary{
+    	font-size: 25px;
+  	}
+
+	#gallery{
+		width: 100%;
+	}
+	
+ 	header .title h2 {
+    	font-size: 60px;
+   		margin-bottom: 200px;
+  	}
+  
+  	.header{
+  		height: 400px;
+  	}
+
+  	#buttn{
+  		display: none;
+  	}
+
+	.title h2{
+		width: 100%;
+	}
+
+	.title{
+		max-width: 100%;
+	}
+}
+
+
+@media screen and (max-width: 600px) {
+  .topnav a {
+  		margin-top:30px; 
+    	float: none;
+    	width: 100%;
+  	}
+}
+
+
+@media screen and (min-width: 1200px) {
+	.topnav{
+		display: none;
+	}
+}
+
+
+
+
+@media screen and(max-width: 800px){
+	body{
+		width: auto;
+	}
+
+	section .hello {
+    	padding: 10px;
+   		margin: 35px 50px;
+  	}
+
+  	summary{
+    	font-size: 25px;
+  	}
+
+	#gallery{
+		width: 100%;
+	}
+	
+ 	header .title h2 {
+    	font-size: 60px;
+   		margin-bottom: 200px;
+  	}
+  
+  	.header{
+  		height: 400px;
+  	}
+
+  	#buttn{
+  		display: none;
+  	}
+
+	.title h2{
+		width: 100%;
+	}
+
+	.title{
+		max-width: 100%;
+	}
+}
+
+@media screen and(max-width: 768px){
+	body{
+		width: auto;
+	}
+
+	section .hello {
+    	padding: 10px;
+   		margin: 35px 50px;
+  	}
+
+  	summary{
+    	font-size: 25px;
+  	}
+
+	#gallery{
+		width: 100%;
+	}
+	
+ 	header .title h2 {
+    	font-size: 60px;
+   		margin-bottom: 200px;
+  	}
+  
+  	.header{
+  		height: 400px;
+  	}
+
+  	#buttn{
+  		display: none;
+  	}
+
+	.title h2{
+		width: 100%;
+	}
+
+	.title{
+		max-width: 100%;
+	}
+}
+
+
+@media screen and (max-width: 640px) and (orientation: landscape) {
+	body{
+		width: auto;
+	}
+
+	section .hello {
+    	padding: 10px;
+   		margin: 35px 50px;
+  	}
+
+  	summary{
+    	font-size: 25px;
+  	}
+
+	#gallery{
+		width: 100%;
+	}
+	
+ 	header .title h2 {
+    	font-size: 60px;
+   		margin-bottom: 200px;
+  	}
+  
+  	.header{
+  		height: 400px;
+  	}
+
+  	#buttn{
+  		display: none;
+  	}
+
+	.title h2{
+		width: 100%;
+	}
+
+	.title{
+		max-width: 100%;
+	}
+}
+/*Photo Grid MQ - Faz um layout de duas colunas no lugar de quatro*/
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/*Photo Grid MQ - Faz duas colunas ficarem no topo uma da outro ao invés de estarem lado a lado*/
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.fa {
+ 
+  font-size: 90px;
+  
+    display: inline-block;
+  text-align: center;
+  text-decoration: none;
+   border-radius: 50%;
+   margin: 4px;
+  cursor: pointer;
+  border-radius: 16px;
+  padding: 20px 44px;
+  border: none;
+  text-shadow: 2px 2px 4px rgba(0,0,0,.5);
+  box-shadow: 0 10px 20px rgba(0,0,0,.5);
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+  background-color:#CE6DFF;
+}
+
+.fa-twitter {
+  background-color: #B68CCB;
+   color: #20062D;
+}
+#iframe{
+  margin: 75px 100px;
+  margin-right: 20px;
+    text-align: center;
+
+}
+iframe{
+      box-shadow: 0 10px 20px rgba(0,0,0,.5);
+}
